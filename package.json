@@ -1,0 +1,66 @@
+{
+  "name": "node",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist",
+"scripts": {
+  "dev": "nodemon --exec babel-node --extensions \".js,.jsx,.ts,.tsx\" src/index.js",
+  "build": "babel src --out-dir dist --copy-files",
+  "start": "node dist/index.js"
+},
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "es2020": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "xiezn",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.24.1",
+    "@alicloud/imagerecog20190930": "^2.0.9",
+    "@alicloud/pop-core": "^1.7.12",
+    "alipay-sdk": "^3.2.0",
+    "body-parser": "^1.13.3",
+    "compression": "^1.5.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "express-jwt": "^6.0.0",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "md5-node": "^1.0.1",
+    "moment": "^2.29.1",
+    "morgan": "^1.8.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "node-xlsx": "^0.21.0",
+    "nodemailer": "^6.7.2",
+    "redis": "^3.1.2",
+    "request": "^2.88.2",
+    "resource-router-middleware": "^0.6.0",
+    "sequelize": "^6.5.0",
+    "tedious": "^11.0.3",
+    "ws": "^8.13.0"
+  },
+"devDependencies": {
+  "@babel/core": "^7.24.0",
+  "@babel/node": "^7.23.9",
+  "@babel/plugin-transform-runtime": "^7.24.1",
+  "@babel/preset-env": "^7.24.1",
+  "eslint": "^8.56.0",
+  "nodemon": "^3.1.9"
+}
+}

@@ -1,0 +1,17 @@
+{
+    "presets": [
+      ["@babel/preset-env", {
+        "targets": {
+          "node": "current"
+        },
+        "modules": "commonjs"
+      }]
+    ],
+    "plugins": [
+      ["@babel/plugin-transform-runtime", {
+        "absoluteRuntime": false,
+        "corejs": false,
+        "version": "^7.24.1"
+      }]
+    ]
+  }
